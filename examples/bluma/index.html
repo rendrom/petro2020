@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>${conf_name} | ${conf_place}</title>
+  <script src='./script.js'></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-12">
+          <div class="container content">
+            <i class="is-large fas fa-mountain"></i>
+            <i class="is-large fas fa-university"></i>
+            <i class="is-large fas fa-microscope"></i>
+            <h1 class="title">${conf_name}</h1>
+            <h3 class="subtitle">
+              ${conf_place}
+            </h3>
+            <a href="https://github.com/dansup/bulma-templates" target="_blank" class="button is-primary is-small">
+              <span class="icon">
+                <i class="fas fa-language"></i>
+              </span>
+              <span>${link_another_locale}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <aside class="is-medium menu">
+
+            <ul class="menu-list">
+              ${menu_items}
+              <!-- <li class="is-right"><a href="#" class="is-active">menu-item</a></li> -->
+            </ul>
+
+          </aside>
+        </div>
+        <div class="column is-9">
+          <div class="content is-medium">
+            <!-- <h3 class="title is-3">Заголовок</h3> -->
+            ${content}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="columns is-mobile is-centered">
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags has-addons"><a class="tag is-link" href="http//igc.irk.ru">IGC</a>
+            <span class="tag is-info">Иркутск</span>
+          </div>
+        </div>
+        <!-- <div class="control">
+          <div class="tags has-addons">
+
+            <span class="tag has-addons is-warning"><a href="#"><i
+                  class="fab fa-lg fa-user"></i></a></span>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+
+</body>
+
+</html>

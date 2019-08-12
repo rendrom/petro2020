@@ -1,9 +1,17 @@
-// loadCss('https://code.getmdl.io/1.3.0/material.indigo-pink.min.css');
-loadCss('https://code.getmdl.io/1.3.0/material.cyan-light_green.min.css');
-loadCss('https://fonts.googleapis.com/icon?family=Material+Icons');
-loadCss('https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en');
+window.addEventListener('resize', () => {
+  var divs = document.querySelectorAll(".menu-list");
+  if (window.innerWidth < 768){
+    divs.forEach(div => div.classList.add("tags"));
+  }
+  else {
+    divs.forEach(div => div.classList.remove("tags"));
+  }
+});
 
-// loadJs('https://code.getmdl.io/1.3.0/material.min.js')
+loadCss('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+loadCss('https://unpkg.com/bulma@0.7.5/css/bulma.min.css');
+loadCss('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+
 
 Tapestry.onDOMLoaded(function () {
   var menuItems = document.getElementsByClassName('menu-list')[0];
