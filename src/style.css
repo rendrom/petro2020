@@ -79,3 +79,8 @@ li {
 .login-link a, .logout-user a {
   color: inherit !important;
 }
+
+#map {
+  width: 100%;
+  height: 600px;
+}

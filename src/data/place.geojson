@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "place",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": {"extrude":"true","height":30,"min_height":0,"type":"building","underground":"false"}, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 104.268622398376465, 52.243466789686352 ], [ 104.268257617950439, 52.244164777218856 ], [ 104.268249571323395, 52.244171346461087 ], [ 104.268549978733063, 52.244230469597738 ], [ 104.268917441368103, 52.243524271427418 ], [ 104.268622398376465, 52.243466789686352 ] ] ] ] } },
+{ "type": "Feature", "properties": {"extrude":"true","height":30,"min_height":0,"type":"building","underground":"false"}, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 104.270282685756683, 52.244329007983794 ], [ 104.270564317703247, 52.244393057817376 ], [ 104.270939826965332, 52.243768978577549 ], [ 104.270655512809753, 52.243703285515409 ], [ 104.270282685756683, 52.244329007983794 ] ] ] ] } }
+]
+}
