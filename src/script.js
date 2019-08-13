@@ -328,9 +328,9 @@ function _initMap() {
 
     map.addLayer(layerOptions, labelLayerId);
 
-    map.addSource("highlighted-buildings", {
-      "type": "geojson",
-      "data": JSON.parse('{"type": "FeatureCollection","features": []}')
+    map.addSource('highlighted-buildings', {
+      type: 'geojson',
+      data: 'https://raw.githubusercontent.com/rendrom/petro2020/master/src/data/place.geojson'
     });
 
     map.addLayer({
@@ -371,9 +371,6 @@ function _initMap() {
       // map.getSource("highlighted-buildings").setData(features[0]);
 
     });
-
-    var igc =  '{"type": "Feature","properties": {"extrude": "true","height": 40,"min_height": 0,"type": "building","underground": "false"},"geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 104.268622398376465, 52.243466789686352 ], [ 104.268257617950439, 52.244164777218856 ], [ 104.268249571323395, 52.244171346461087 ], [ 104.268549978733063, 52.244230469597738 ], [ 104.268917441368103, 52.243524271427418 ], [ 104.268622398376465, 52.243466789686352 ] ] ] ] }}';
-    map.getSource("highlighted-buildings").setData(JSON.parse(igc));
 
   });
 
