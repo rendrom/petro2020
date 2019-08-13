@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bluma example</title>
+  <script src='./script.js'></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-item navbar-brand has-text-weight-bold has-text-primary">PETRO<span class="logo2020">2020</span></div>
+      <!-- <a class="navbar-item" href="#">
+        <img src="" width="112" height="28">
+      </a> -->
+
+      <a role="button" class="navbar-burger burger" id="js-navbar-burger" aria-label="menu" aria-expanded="false"
+        data-target="app-navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="app-navbar" class="navbar-menu">
+      <div class="navbar-start" id="js-navbar-items">
+      </div>
+
+      <div class="navbar-end" id="js-navbar-end">
+        <div class="navbar-item">
+
+          ${user_string}
+
+          <!-- <span class="remove-it-in-offline"><span class="logout-user"><a href="#">Иванов
+                И.</a></span><span class="logout-link"> (<a href="#">Logout</a>)</span></span> -->
+
+        </div>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="${link_another_locale}" id="js-language-switcher"
+              class="button is-light i18n i18n-language-switcher">
+              EN
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-menu is-active" id="js-mobile-menu">
+      <div class="navbar-item is-pulled-right">
+        <div class="tags has-addons">
+          <span class="tag">
+              ${user_string}
+
+            <!-- <span class="remove-it-in-offline"><span class="logout-user"><a href="#">Иванов
+                  И.</a></span><span class="logout-link"> (<a href="#">Logout</a>)</span></span> -->
+
+          </span>
+          <span class="tag">
+            <a href="${link_another_locale}" class="i18n i18n-language-switcher">
+              RU
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-12">
+          <div class="container content">
+            <i class="is-large fas fa-mountain"></i>
+            <i class="is-large fas fa-university"></i>
+            <i class="is-large fas fa-microscope"></i>
+            <h1 class="title">${conf_name}</h1>
+
+            <!-- <h1 class="title">XIII ВСЕРОССИЙСКОЕ ПЕТРОГРАФИЧЕСКОЕ СОВЕЩАНИЕ (с участием зарубежных ученых) «ПЕТРОЛОГИЯ И
+              ГЕОДИНАМИКА ГЕОЛОГИЧЕСКИХ ПРОЦЕССОВ»</h1> -->
+
+            <h3 class="subtitle">
+
+              <!-- г. Иркутск, 07-13 сентября 2020 г. -->
+
+              ${conf_place}
+            </h3>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <aside class="is-medium menu">
+
+            <ul class="menu-list">
+              ${menu_items}
+              <!-- <li><a href="#">Организаторы</a></li>
+              <li><a href="#">Информационное сообщение</a></li>
+              <li><a href="#">Место проведения</a></li>
+              <li><a href="#">Важные даты</a></li>
+              <li><a href="#">Представление материалов</a></li>
+              <li><a href="#">Контактная информация</a></li>
+              <li><a href="#">Научные направления</a></li>
+              <li><a href="#">Приглашение</a></li>
+              <li><a href="#">Регистрация/Вход</a></li> -->
+            </ul>
+
+          </aside>
+        </div>
+        <div class="column is-9">
+          <div class="content is-medium">
+            <!-- <h3 class="title is-3">Заголовок</h3> -->
+            ${content}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer has-background-dark">
+    <div class="columns is-mobile is-centered">
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags has-addons"><a class="tag is-link" href="http//igc.irk.ru">IGC</a>
+            <span class="tag is-info">Иркутск</span>
+          </div>
+        </div>
+        <!-- <div class="control">
+          <div class="tags has-addons">
+
+            <span class="tag has-addons is-warning"><a href="#"><i
+                  class="fab fa-lg fa-user"></i></a></span>
+          </div>
+        </div>
+      </div> -->
+      </div>
+
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+
+</body>
+
+</html>

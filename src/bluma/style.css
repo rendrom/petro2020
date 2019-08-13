@@ -1,17 +1,21 @@
-body,
-html {
+body, html {
   background: #f2f2f2;
 }
 
-pre,
-.message {
+pre, .message {
   max-width: 960px;
 }
 
-li {margin: 10px}
+li {
+  margin: 10px
+}
+
+.logo2020 {
+  color:  #524ad0;
+}
 
 .hero.is-primary {
-background: linear-gradient(to top right, #524ad0 10%, #D099FA);
+  background: linear-gradient(to top right, #524ad0 10%, #D099FA);
 }
 
 .box {
@@ -33,7 +37,9 @@ background: linear-gradient(to top right, #524ad0 10%, #D099FA);
   margin-left: 0.2em;
 }
 
-.media-content {overflow: hidden;}
+.media-content {
+  overflow: hidden;
+}
 
 .menu-list li a:hover {
   background: #d9d9d9;
@@ -52,4 +58,24 @@ background: linear-gradient(to top right, #524ad0 10%, #D099FA);
   background: inherit;
   margin: inherit;
 }
-.footer {background-color: white;}
+
+.footer {
+  background-color: white;
+}
+
+#page-settings {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+}
+
+.menu-list a {
+  color: #0F1D38;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.login-link a, .logout-user a {
+  color: inherit !important;
+}
