@@ -40,8 +40,8 @@ module.exports = (env, argv) => {
 
   const config = {
     mode: argv.mode || 'development',
-    devtool: 'none',
-    // devtool: isProd ? '#source-map' : 'eval-source-map',
+    // devtool: 'none',
+    devtool: isProd ? '#source-map' : 'eval-source-map',
 
     entry: {petro2020: './conferences/petro/index.js'},
 

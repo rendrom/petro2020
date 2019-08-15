@@ -2,6 +2,7 @@
  * @author e-mail:rendrom@gmail.com
  * @link https://github.com/rendrom/petro2020
  */
+import { loadCss, onDomLoaded, addMeta } from './utils';
 
 // LOAD 3rd PARTY LIBRARIES
 

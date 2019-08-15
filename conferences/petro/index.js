@@ -1,6 +1,7 @@
 import '../../src/style.css';
 
-import { onDomLoaded } from '../../src/script';
+import '../../src/script';
+import { onDomLoaded } from '../../src/utils';
 import { createMap } from '../../src/map';
 
 if (window.location.pathname.indexOf('/place') !== -1) {
