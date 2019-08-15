@@ -1,7 +1,7 @@
 .hero.is-primary {
   /* background: linear-gradient(to top right, #524ad0 10%, #D099FA); */
-  background-image: linear-gradient(to top right, #524ad0 10%, #D099FA), url('https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/ultramafite/data/header.jpg');
-  /* background-image: linear-gradient(to top right, #524ad0 10%, #D099FA), url('http://127.0.0.1:5500/conferences/ultramafite/data/header.jpg'); */
+  background-image: linear-gradient(to top right, #524ad0 10%, #D099FA), url('https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/ultramafite/data/header-low.jpg');
+  /* background-image: linear-gradient(to top right, #524ad0 10%, #D099FA), url('http://127.0.0.1:5500/conferences/ultramafite/data/header-low.jpg'); */
   background-size: cover;
   background-blend-mode: multiply;
 }

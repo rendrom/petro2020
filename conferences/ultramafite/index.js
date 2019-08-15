@@ -5,6 +5,20 @@ import '../../src/script';
 import { onDomLoaded } from '../../src/utils';
 import { createMap } from '../../src/ngwMap';
 
+onDomLoaded(function () {
+  // var url = 'http://127.0.0.1:5500/conferences/ultramafite/data/header.jpg';
+  var url = 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/ultramafite/data/header.jpg'
+  var hero = document.getElementsByClassName('hero')[0];
+  var img = new Image();
+  img.src = url;
+  // Once image is loaded replace the src of the HTML element
+  img.onload = function() {
+    var background = "linear-gradient(to top right, #524ad0 10%, #D099FA), url('" + url + "')";
+    hero.style.backgroundImage = background;
+  };
+
+})
+
 var baseUrl = 'http://geonote.nextgis.com';
 var _createMap = function () {
   createMap({
@@ -56,7 +70,7 @@ var _createMap = function () {
     var showInfo = function (item, resourceId, featureId) {
 
       var html = '<div class="box info-panel">' +
-      '<div>Точка №' + item.fields.name + '</div>';
+        '<div>Точка №' + item.fields.name + '</div>';
       if (item.fields.rock) {
         html += '<div>Порода: ' + item.fields.rock + '</div>'
       }
