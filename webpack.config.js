@@ -1,4 +1,9 @@
 const webpack = require('webpack');
+var PACKAGE = require('./package.json');
+var banner = PACKAGE.name + ' - ' + PACKAGE.version + ' | ' +
+  new Date().toUTCString() + ' | ' + PACKAGE.author + ' | ' +
+  PACKAGE.license + ' | ' +
+  PACKAGE.homepage;
 
 
 module.exports = (env, argv) => {
@@ -35,7 +40,8 @@ module.exports = (env, argv) => {
   let plugins = [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(argv.mode || 'development'),
-    })
+    }),
+    new webpack.BannerPlugin(banner)
   ];
 
   const config = {
