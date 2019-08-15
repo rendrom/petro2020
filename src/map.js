@@ -1,7 +1,9 @@
 import { loadJs, loadCss } from './utils';
 
-export function createMap() {
+var geojson;
 
+export function createMap(options) {
+  geojson = options.geojson;
   loadJs('https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js');
   loadCss('https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css');
 
@@ -69,7 +71,7 @@ function _initMap() {
 
     map.addSource('highlighted-buildings', {
       type: 'geojson',
-      data: 'https://raw.githubusercontent.com/rendrom/petro2020/master/src/data/place.geojson'
+      data: geojson
     });
 
     map.addLayer({
