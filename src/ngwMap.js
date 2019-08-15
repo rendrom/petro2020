@@ -39,7 +39,7 @@ function _initMap(onMapCreate) {
   // data from OpenStreetMap.
   map.on('load', function () {
     if (onMapCreate) {
-      onMapCreate(map);
+      onMapCreate(map, ngwMap);
     }
     // Insert the layer beneath any symbol layer.
     var layers = map.getStyle().layers;
@@ -118,8 +118,8 @@ function _initMap(onMapCreate) {
       var features = map.queryRenderedFeatures(bbox, { layers: ['3d-buildings'] });
 
 
-      var feature = features[0];
-      console.log(JSON.stringify({ type: 'Feature', properties: feature.properties, geometry: feature.geometry }));
+      // var feature = features[0];
+      // console.log(JSON.stringify({ type: 'Feature', properties: feature.properties, geometry: feature.geometry }));
       // map.getSource("highlighted-buildings").setData(features[0]);
 
     });
