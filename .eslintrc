@@ -1,5 +1,15 @@
 {
   "extends": [
-    "@nextgis/eslint-config"
-  ]
+    "eslint:recommended",
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "amd": true,
+    "es6": true,
+  },
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module",
+  },
 }

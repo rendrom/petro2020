@@ -49,7 +49,10 @@ module.exports = (env, argv) => {
     // devtool: 'none',
     devtool: isProd ? '#source-map' : 'eval-source-map',
 
-    entry: {petro2020: './conferences/petro/index.js'},
+    entry: {
+      petro2020: './conferences/petro/index.js',
+      ultramafite2019: './conferences/ultramafite/index.js'
+    },
 
     output: {
       filename: '[name].js',
