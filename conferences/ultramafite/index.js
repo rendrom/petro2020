@@ -8,7 +8,8 @@ if (window.location.pathname.indexOf('/place') !== -1) {
   onDomLoaded(createMap({ geojson: 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/place.geojson' }));
 }
 onDomLoaded(createMap({
-  geojson: 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/ultramafic/data/place.geojson',
+  geojson: 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/ultramafite/data/place.geojson',
+
   ngwMapOptions: {
     center: [106.878039, 53.023219],
     zoom: 15,
