@@ -112,17 +112,17 @@ function _initMap(onMapCreate) {
 
     }, labelLayerId);
 
-    map.on('click', function (e) {
+    // map.on('click', function (e) {
       // set bbox as 5px reactangle area around clicked point
-      var bbox = [[e.point.x - 5, e.point.y - 5], [e.point.x + 5, e.point.y + 5]];
-      var features = map.queryRenderedFeatures(bbox, { layers: ['3d-buildings'] });
+      // var bbox = [[e.point.x - 5, e.point.y - 5], [e.point.x + 5, e.point.y + 5]];
+      // var features = map.queryRenderedFeatures(bbox, { layers: ['3d-buildings'] });
 
 
       // var feature = features[0];
       // console.log(JSON.stringify({ type: 'Feature', properties: feature.properties, geometry: feature.geometry }));
       // map.getSource("highlighted-buildings").setData(features[0]);
 
-    });
+    // });
 
   });
 

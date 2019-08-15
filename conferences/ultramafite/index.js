@@ -1,9 +1,11 @@
 import '../../src/style.css';
-
+import './style.css';
+import './config';
 import '../../src/script';
 import { onDomLoaded } from '../../src/utils';
 import { createMap } from '../../src/ngwMap';
 
+var baseUrl = 'http://geonote.nextgis.com';
 var _createMap = function () {
   createMap({
     geojson: 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/ultramafite/data/place.geojson',
@@ -12,7 +14,7 @@ var _createMap = function () {
       center: [106.878039, 53.023219],
       zoom: 16,
       // baseUrl: 'https://demo.nextgis.com',
-      baseUrl: 'http://geonote.nextgis.com',
+      baseUrl: baseUrl,
       resources: [
         {
           // resourceId: 4248,
@@ -30,6 +32,7 @@ var _createMap = function () {
 
   function onMap(map, ngwMap) {
     ngwMap.emitter.on('layer:click', function (e) {
+      hideInfo();
       if (ngwMap) {
         var vectorLayer = ngwMap.getLayer('points');
 
@@ -38,10 +41,54 @@ var _createMap = function () {
           var feature = selected[0].feature;
           ngwMap.connector.get('feature_layer.feature.item', null, { fid: feature.id, id: vectorLayer.options.resourceId }).then(function (x) {
             console.log(x);
+            showInfo(x, vectorLayer.options.resourceId, feature.id);
           });
         }
       }
     });
+
+    var infoPanel = document.createElement('div');
+
+    var hideInfo = function () {
+      infoPanel.innerHTML = '';
+    }
+
+    var showInfo = function (item, resourceId, featureId) {
+
+      var html = '<div class="box info-panel">' +
+      '<div>Точка №' + item.fields.name + '</div>';
+      if (item.fields.rock) {
+        html += '<div>Порода: ' + item.fields.rock + '</div>'
+      }
+      if (item.extensions && item.extensions.attachment) {
+        for (var fry = 0; fry < item.extensions.attachment.length; fry++) {
+          var img = item.extensions.attachment[fry];
+          const url = getImageUrl(img, resourceId, featureId, 128, 128);
+          var figure = '<figure class="image is-128x72">' +
+            '<img src="' + url + '">' +
+            '</figure>';
+          html += figure;
+        }
+      }
+      html += '</div>';
+      infoPanel.innerHTML = html;
+    }
+
+    var getImageUrl = function (img, resourceId, featureId, width, height) {
+      const url = baseUrl + '/api/resource/' +
+        resourceId + '/feature/' + featureId +
+        '/attachment/' + img.id + '/image' +
+        ((width && height) ? '?size=' + width + 'x' + height : '');
+      return url;
+    }
+
+    var infoPanelControl = ngwMap.createControl({
+      onAdd: function () {
+        return infoPanel;
+      }
+    }, { margin: true });
+
+    ngwMap.addControl(infoPanelControl, 'top-right');
   }
 }
 

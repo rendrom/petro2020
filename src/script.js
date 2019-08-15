@@ -20,6 +20,7 @@ var MENU_ITEMS;
 var MOBILE_SIZE = 768;
 var MOBILE_MENU;
 var ACTIVE_LINK;
+var CONF_URL = window.CONF_URL;
 
 window.addEventListener('load', function () {
   updateNavMenu();
@@ -36,6 +37,7 @@ onDomLoaded(function () {
   hideMobileMenu();
   updateMobileMenu();
   addBurgerListener(); // to show/hide mobile menu
+  addNavBrandClickEvent();
 
 });
 
@@ -46,6 +48,14 @@ window.addEventListener('resize', function () {
   hideMobileMenu();
 });
 
+function addNavBrandClickEvent() {
+  var navBarBrand = document.getElementById('js-vavbar-brand');
+  if (navBarBrand) {
+    navBarBrand.onclick = function () {
+      window.open(CONF_URL || window.location.origin);
+    }
+  }
+}
 
 function updateMenuItems() {
   var menuItemsLinks = document.getElementsByClassName("menu-list")[0];
@@ -62,7 +72,9 @@ function updateMenuItems() {
 
 function updateNavMenu() {
   var navItems = [];
-  for (var fry = 0; fry < MENU_ITEMS.length; fry++) {
+  var fry;
+  var item;
+  for (fry = 0; fry < MENU_ITEMS.length; fry++) {
     var link = MENU_ITEMS[fry];
     var navItem = _createNavItem(link);
     navItems.push(navItem);
@@ -80,8 +92,8 @@ function updateNavMenu() {
   var allowedWidth = navMenu.clientWidth - menuEndWidth - 52; // 52 is a show more menu width
 
   var placeInDropDownMenu = navElementWidth > allowedWidth;
-  for (var fry = 0; fry < navItems.length; fry++) {
-    var item = navItems[fry];
+  for (fry = 0; fry < navItems.length; fry++) {
+    item = navItems[fry];
     if (!placeInDropDownMenu) {
       navElement.appendChild(item);
       navElementWidth += item.clientWidth;
@@ -102,8 +114,8 @@ function updateNavMenu() {
       '<div class="navbar-dropdown"></div>'
     ].join('');
     var navDropDownItems = navDropDown.getElementsByClassName('navbar-dropdown')[0];
-    for (var fry = 0; fry < dropDownItems.length; fry++) {
-      var item = dropDownItems[fry];
+    for (fry = 0; fry < dropDownItems.length; fry++) {
+      item = dropDownItems[fry];
       navDropDownItems.appendChild(item);
     }
     navElement.appendChild(navDropDown);
@@ -139,9 +151,9 @@ function hideMobileMenu() {
   toggleMobileMenu(false);
 }
 
-function showMobileMenu() {
-  toggleMobileMenu(true);
-}
+// function showMobileMenu() {
+//   toggleMobileMenu(true);
+// }
 
 function toggleMobileMenu(status) {
   if (MOBILE_MENU) {
