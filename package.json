@@ -1,0 +1,35 @@
+{
+  "name": "petro2020",
+  "version": "0.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "rimraf": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "scripts": {
+    "fix": "eslint --fix --ext .js src",
+    "start": "npm run watch",
+    "build": "webpack --progress",
+    "watch": "rimraf ./dist && npm run build -- --watch",
+    "dev": "rimraf ./dist && npm run build",
+    "prod": "rimraf ./dist && npm run build -- --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rendrom/petro2020.git"
+  },
+  "author": "rendrom@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rendrom/petro2020/issues"
+  },
+  "homepage": "https://github.com/rendrom/petro2020#readme"
+}
