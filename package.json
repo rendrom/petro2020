@@ -1,12 +1,13 @@
 {
   "name": "petro2020",
   "version": "0.0.0",
-  "description": "",
+  "description": "Шаблон сайта конференций на платформе 'Информационная система 'Конференции'",
   "main": "webpack.config.js",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@nextgis/eslint-config": "^0.17.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "rimraf": "^3.0.0",

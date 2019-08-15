@@ -1,3 +1,5 @@
+import { loadJs, loadCss } from './utils';
+
 export function createMap() {
 
   loadJs('https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js');
