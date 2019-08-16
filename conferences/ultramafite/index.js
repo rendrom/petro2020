@@ -12,12 +12,21 @@ onDomLoaded(function () {
   var img = new Image();
   img.src = url;
   // Once image is loaded replace the src of the HTML element
-  img.onload = function() {
+  img.onload = function () {
     var background = "linear-gradient(to top right, #524ad0 10%, #D099FA), url('" + url + "')";
     hero.style.backgroundImage = background;
   };
 
 })
+
+var pointLayer = {
+  // resourceId: 4248,
+  resourceId: 20,
+  id: 'points',
+  selectable: true,
+  paint: { color: '#524ad0', radius: 6, opacity: 0.6, stroke: true, strokeColor: 'white', strokeOpacity: 1 },
+  selectedPaint: { color: '#524ad0', radius: 8, opacity: 1, stroke: true, strokeColor: 'white', strokeOpacity: 1 }
+}
 
 var baseUrl = 'http://geonote.nextgis.com';
 var _createMap = function () {
@@ -29,22 +38,14 @@ var _createMap = function () {
       zoom: 16,
       // baseUrl: 'https://demo.nextgis.com',
       baseUrl: baseUrl,
-      resources: [
-        {
-          // resourceId: 4248,
-          resourceId: 20,
-          id: 'points',
-          selectable: true,
-          paint: { color: '#524ad0', radius: 6, opacity: 0.6, stroke: true, strokeColor: 'white', strokeOpacity: 1 },
-          selectedPaint: { color: '#524ad0', radius: 8, opacity: 1, stroke: true, strokeColor: 'white', strokeOpacity: 1 }
-        }
-      ],
+      resources: [],
       pitch: 45,
       bearing: -17.6,
     }
   }, onMap);
 
   function onMap(map, ngwMap) {
+    ngwMap.addNgwLayer(pointLayer);
     ngwMap.emitter.on('layer:click', function (e) {
       hideInfo();
       if (ngwMap) {
