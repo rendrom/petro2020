@@ -13,9 +13,13 @@
     REPO: https://github.com/rendrom/petro2020
    -->
 
+  <!-- <script src='https://raw.githack.com/rendrom/petro2020/master/dist/petro2020.js'></script> -->
+  <script src='../../dist/petro2020.js'></script>
+
   <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <div class="navbar-item navbar-brand has-text-weight-bold has-text-primary">PETRO<span class="logo2020">2020</span></div>
+      <div class="navbar-item navbar-brand has-text-weight-bold has-text-primary" id="js-navbar-brand">PETRO<span
+          class="logo2020">2020</span></div>
       <!-- <a class="navbar-item" href="#">
         <img src="" width="112" height="28">
       </a> -->
@@ -53,10 +57,10 @@
     </div>
 
     <div class="navbar-menu is-active" id="js-mobile-menu">
-      <div class="navbar-item is-pulled-right">
-        <div class="tags has-addons">
+      <div class="navbar-item ">
+        <div class="tags has-addons is-pulled-right">
           <span class="tag">
-              ${user_string}
+            ${user_string}
 
             <!-- <span class="remove-it-in-offline"><span class="logout-user"><a href="#">Иванов
                   И.</a></span><span class="logout-link"> (<a href="#">Logout</a>)</span></span> -->
@@ -71,25 +75,28 @@
       </div>
     </div>
   </nav>
-  <section class="hero is-primary">
+  <div class="hero-before"></div>
+  <section class="hero has-text-centered">
     <div class="hero-body">
       <div class="columns">
         <div class="column is-12">
-          <div class="container content">
-            <i class="is-large fas fa-mountain"></i>
-            <i class="is-large fas fa-university"></i>
-            <i class="is-large fas fa-microscope"></i>
-            <h1 class="title">${conf_name}</h1>
+          <div class="container content has-text-weight-bold header-text is-family-secondary is-size-6-mobile is-size-4">
 
-            <!-- <h1 class="title">XIII ВСЕРОССИЙСКОЕ ПЕТРОГРАФИЧЕСКОЕ СОВЕЩАНИЕ (с участием зарубежных ученых) «ПЕТРОЛОГИЯ И
-              ГЕОДИНАМИКА ГЕОЛОГИЧЕСКИХ ПРОЦЕССОВ»</h1> -->
+            <!-- <h1 class="title">${conf_name}</h1> -->
 
-            <h3 class="subtitle">
+            <div class="is-capitalized">XIII ВСЕРОССИЙСКОЕ ПЕТРОГРАФИЧЕСКОЕ СОВЕЩАНИЕ</div>
+            <div class="">(с участием зарубежных ученых)</div>
+            <div class="is-size-3 is-size-4-mobile is-capitalized">«ПЕТРОЛОГИЯ И ГЕОДИНАМИКА ГЕОЛОГИЧЕСКИХ ПРОЦЕССОВ»</div>
 
-              <!-- г. Иркутск, 07-13 сентября 2020 г. -->
 
+            <div class="">Иркутск</div>
+            <div class="">07-13 сентября 2020</div>
+            <div></div>
+            <!-- <h3 class="subtitle">
+
+              г. Иркутск, 07-13 сентября 2020 г.
               ${conf_place}
-            </h3>
+            </h3> -->
           </div>
         </div>
       </div>
@@ -142,20 +149,22 @@
             <span class="tag is-info">Иркутск</span>
           </div>
         </div>
-        <!-- <div class="control">
+      </div>
+    </div>
+    <div class="columns is-mobile is-centered love-science-robots is-8">
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
           <div class="tags has-addons">
+            <span class="tag has-addons is-dark"><i class="fas fa-mountain"></i></span>
+            <span class="tag has-addons is-dark"><i class="fas fa-university"></i></span>
+            <span class="tag has-addons is-dark"><i class="fas fa-microscope"></i></span>
 
-            <span class="tag has-addons is-warning"><a href="#"><i
-                  class="fab fa-lg fa-user"></i></a></span>
           </div>
         </div>
-      </div> -->
       </div>
+    </div>
 
   </footer>
-
-  <!-- <script src='https://raw.githack.com/rendrom/petro2020/master/dist/petro2020.js'></script> -->
-  <script src='../../dist/petro2020.js'></script>
 
 </body>
 

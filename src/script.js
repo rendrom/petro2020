@@ -49,10 +49,10 @@ window.addEventListener('resize', function () {
 });
 
 function addNavBrandClickEvent() {
-  var navBarBrand = document.getElementById('js-vavbar-brand');
+  var navBarBrand = document.getElementById('js-navbar-brand');
   if (navBarBrand) {
     navBarBrand.onclick = function () {
-      window.open(CONF_URL || window.location.origin);
+      window.open(CONF_URL || window.location.origin, '_self');
     }
   }
 }
