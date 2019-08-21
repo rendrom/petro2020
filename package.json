@@ -1,6 +1,6 @@
 {
   "name": "petro2020",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Шаблон сайта конференций на платформе 'Информационная система 'Конференции'",
   "main": "webpack.config.js",
   "dependencies": {},
