@@ -8,113 +8,119 @@
 
 <body>
 
-<!--
+  <!--
   AUTHOR: rendrom@gmail.com
   REPO: https://github.com/rendrom/petro2020
   -->
 
-<script src='https://raw.githack.com/rendrom/petro2020/master/dist/petro2020.js'></script>
-<!-- <script src='../../dist/petro2020.js'></script> -->
+  <!-- <script src='https://raw.githack.com/rendrom/petro2020/master/dist/petro2020.js'></script> -->
+  <script src='../../dist/petro2020.js'></script>
 
-<nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <div class="navbar-item navbar-brand has-text-weight-bold has-text-primary" id="js-navbar-brand">PETRO<span
-        class="logo2020">2020</span></div>
-    <!-- <a class="navbar-item" href="#">
+  <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-item navbar-brand has-text-weight-bold has-text-primary" id="js-navbar-brand">PETRO<span
+          class="logo2020">2020</span></div>
+      <!-- <a class="navbar-item" href="#">
       <img src="" width="112" height="28">
     </a> -->
 
-    <a role="button" class="navbar-burger burger" id="js-navbar-burger" aria-label="menu" aria-expanded="false"
-      data-target="app-navbar">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="app-navbar" class="navbar-menu">
-    <div class="navbar-start" id="js-navbar-items">
+      <a role="button" class="navbar-burger burger" id="js-navbar-burger" aria-label="menu" aria-expanded="false"
+        data-target="app-navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
 
-    <div class="navbar-end" id="js-navbar-end">
-      <div class="navbar-item">
-
-        ${user_string}
-
-        <!-- <span class="remove-it-in-offline"><span class="logout-user"><a href="#">Иванов
-              И.</a></span><span class="logout-link"> (<a href="#">Logout</a>)</span></span> -->
-
+    <div id="app-navbar" class="navbar-menu">
+      <div class="navbar-start" id="js-navbar-items">
       </div>
-      <div class="navbar-item">
-        <div class="buttons">
-          <a href="${link_another_locale}" id="js-language-switcher"
-            class="button is-light i18n i18n-language-switcher">
-            EN
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="navbar-menu is-active" id="js-mobile-menu">
-    <div class="navbar-item ">
-      <div class="tags has-addons is-pulled-right">
-        <span class="tag">
+      <div class="navbar-end" id="js-navbar-end">
+        <div class="navbar-item">
+
           ${user_string}
 
           <!-- <span class="remove-it-in-offline"><span class="logout-user"><a href="#">Иванов
-                И.</a></span><span class="logout-link"> (<a href="#">Logout</a>)</span></span> -->
+              И.</a></span><span class="logout-link"> (<a href="#">Logout</a>)</span></span> -->
 
-        </span>
-        <span class="tag">
-          <a href="${link_another_locale}" class="i18n i18n-language-switcher">
-            RU
-          </a>
-        </span>
+        </div>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="${link_another_locale}" id="js-language-switcher"
+              class="button is-light i18n i18n-language-switcher">
+              EN
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<div class="hero-before"></div>
-<section class="hero has-text-centered">
-  <div class="hero-body">
-    <div class="columns">
-      <div class="column is-12">
-        <div class="container content has-text-weight-bold header-text is-family-secondary is-size-6-mobile is-size-4">
 
-          <!-- <h1 class="title">${conf_name}</h1> -->
+    <div class="navbar-menu is-active" id="js-mobile-menu">
+      <div class="navbar-item ">
+        <div class="tags has-addons is-pulled-right">
+          <span class="tag">
+            ${user_string}
 
-          <div class="is-capitalized">XIII ВСЕРОССИЙСКОЕ ПЕТРОГРАФИЧЕСКОЕ СОВЕЩАНИЕ</div>
-          <div class="">(с участием зарубежных ученых)</div>
-          <div class="is-size-3 is-size-4-mobile is-capitalized">«ПЕТРОЛОГИЯ И ГЕОДИНАМИКА ГЕОЛОГИЧЕСКИХ ПРОЦЕССОВ»</div>
+            <!-- <span class="remove-it-in-offline"><span class="logout-user"><a href="#">Иванов
+                И.</a></span><span class="logout-link"> (<a href="#">Logout</a>)</span></span> -->
+
+          </span>
+          <span class="tag">
+            <a href="${link_another_locale}" class="i18n i18n-language-switcher">
+              RU
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="app-body">
+  <div class="app-html">
+
+    <div class="hero-before"></div>
+    <section class="hero has-text-centered">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-12">
+            <div
+              class="container content has-text-weight-bold header-text is-family-secondary is-size-6-mobile is-size-4">
+
+              <!-- <h1 class="title">${conf_name}</h1> -->
+
+              <div class="is-capitalized">XIII ВСЕРОССИЙСКОЕ ПЕТРОГРАФИЧЕСКОЕ СОВЕЩАНИЕ</div>
+              <div class="">(с участием зарубежных ученых)</div>
+              <div class="is-size-3 is-size-4-mobile is-capitalized">«ПЕТРОЛОГИЯ И ГЕОДИНАМИКА ГЕОЛОГИЧЕСКИХ ПРОЦЕССОВ»
+              </div>
 
 
-          <div class="">Иркутск</div>
-          <div class="">07-13 сентября 2020</div>
-          <div></div>
-          <!-- <h3 class="subtitle">
+              <div class="">Иркутск</div>
+              <div class="">07-13 сентября 2020</div>
+              <div></div>
+              <!-- <h3 class="subtitle">
 
             г. Иркутск, 07-13 сентября 2020 г.
             ${conf_place}
           </h3> -->
+            </div>
+          </div>
         </div>
+
+
       </div>
-    </div>
+    </section>
 
 
-  </div>
-</section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <aside class="is-medium menu">
 
-
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-3">
-        <aside class="is-medium menu">
-
-          <ul class="menu-list">
-            ${menu_items}
-            <!-- <li><a href="#">Организаторы</a></li>
+              <ul class="menu-list">
+                ${menu_items}
+                <!-- <li><a href="#">Организаторы</a></li>
             <li><a href="#">Информационное сообщение</a></li>
             <li><a href="#">Место проведения</a></li>
             <li><a href="#">Важные даты</a></li>
@@ -123,48 +129,50 @@
             <li><a href="#">Научные направления</a></li>
             <li><a href="#">Приглашение</a></li>
             <li><a href="#">Регистрация/Вход</a></li> -->
-          </ul>
+              </ul>
 
-        </aside>
-      </div>
-      <div class="column is-9">
-        <div class="content is-medium" id="js-content">
-          <!-- <h3 class="title is-3">Заголовок</h3> -->
-          ${content}
+            </aside>
+          </div>
+          <div class="column is-9">
+            <div class="content is-medium" id="js-content">
+              <!-- <h3 class="title is-3">Заголовок</h3> -->
+              ${content}
 
-          <div id="map"></div>
+              <div id="map"></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
-<footer class="footer has-background-dark">
-  <div class="columns is-mobile is-centered">
-    <div class="field is-grouped is-grouped-multiline">
-      <div class="control">
-        <div class="tags has-addons"><a class="tag is-link" href="http//igc.irk.ru">IGC</a>
-          <span class="tag is-info">Иркутск</span>
+    <footer class="footer has-background-dark">
+      <div class="columns is-mobile is-centered">
+        <div class="field is-grouped is-grouped-multiline">
+          <div class="control">
+            <div class="tags has-addons"><a class="tag is-link" href="http//igc.irk.ru">IGC</a>
+              <span class="tag is-info">Иркутск</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="columns is-mobile is-centered love-science-robots is-8">
-    <div class="field is-grouped is-grouped-multiline">
-      <div class="control">
-        <div class="tags has-addons">
-          <span class="tag has-addons is-dark"><i class="fas fa-mountain"></i></span>
-          <span class="tag has-addons is-dark"><i class="fas fa-university"></i></span>
-          <span class="tag has-addons is-dark"><i class="fas fa-microscope"></i></span>
+      <div class="columns is-mobile is-centered love-science-robots is-8">
+        <div class="field is-grouped is-grouped-multiline">
+          <div class="control">
+            <div class="tags has-addons">
+              <span class="tag has-addons is-dark"><i class="fas fa-mountain"></i></span>
+              <span class="tag has-addons is-dark"><i class="fas fa-university"></i></span>
+              <span class="tag has-addons is-dark"><i class="fas fa-microscope"></i></span>
 
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-</footer>
+    </footer>
+  </div>
+</div>
 
 </body>
 
