@@ -46,8 +46,8 @@ body {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   display: block;
-  background: url('http://127.0.0.1:5500/conferences/petro/data/header-low.jpg') center center;
-  /* background: url('https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/header-low.jpg') center center; */
+  /* background: url('http://127.0.0.1:5500/conferences/petro/data/header-low.jpg') center center; */
+  background: url('https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/header-low.jpg') center center;
   background-size: cover;
   transform:  translateZ(-1px) scale(2) translate(-0%, -10%);
   min-height: 100%;

@@ -8,8 +8,8 @@ import { createMap } from '../../src/ngwMap';
 
 
 onDomLoaded(function () {
-  var url = 'http://127.0.0.1:5500/conferences/petro/data/header.jpg';
-  // var url = 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/ultramafite/data/header.jpg'
+  // var url = 'http://127.0.0.1:5500/conferences/petro/data/header.jpg';
+  var url = 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/header.jpg'
   var hero = document.getElementsByClassName('hero-before')[0];
   var img = new Image();
   img.src = url;
