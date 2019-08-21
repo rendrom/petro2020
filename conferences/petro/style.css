@@ -8,84 +8,14 @@
 }
 
 
-
-/*************************************************************
-  PARALLAX
-**************************************************************/
-
-.app-html {
-  overflow: hidden!important;
-  height: 100%!important;
-}
-
-.app-body {
-  overflow-x: hidden!important;
-  overflow-y: scroll!important;
-  height: 100%!important;
-  perspective: 1px!important;
-  transform-style: preserve-3d!important;
-}
-
-.navbar {
-  /* perspective: 1px!important; */
-}
-
-
-/*************************************************************
-  HEADER
-**************************************************************/
 .hero {
-  position: relative;
+
   min-height: 300px;
-  max-height: 450px;
-  width: 100%;
-  transform-style: inherit;
-  z-index: -1;
-}
-
-
-
-.hero-before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  display: block;
   /* background: url('http://127.0.0.1:5500/conferences/petro/data/header-low.jpg') center center; */
-  background: url('https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/header-low.jpg') center center;
+  background-image: url('https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/header-low.jpg');
+  background-position: center center;
   background-size: cover;
-  transform:  translateZ(-1px) scale(2) translate(-0%, -0vh);
-  min-height: 100%;
-  z-index: -2;
 }
 
 
-/*************************************************************
-  SECTIONS
-**************************************************************/
-.section {
-  position: relative;
-  min-height: 300px;
-  width: 100%;
-  position: relative;
-  transform-style: inherit;
-}
-
-.section {
-  background: #fafafa;
-  box-shadow: 0 0 10px #333;
-  z-index: 1;
-}
-
-
-/*************************************************************
-  HEADINGS
-**************************************************************/
-.hero-body {
-  /* width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%; */
-  /* transform: translateZ(-1px) scale(2) translate(-25%, -20%); */
-}
 

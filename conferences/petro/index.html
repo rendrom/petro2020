@@ -58,7 +58,7 @@
 
     <div class="navbar-menu is-active" id="js-mobile-menu">
       <div class="navbar-item ">
-        <div class="tags has-addons is-pulled-right">
+        <div class="tags has-addons">
           <span class="tag">
             ${user_string}
 
@@ -76,51 +76,47 @@
     </div>
   </nav>
 
-  <div class="app-body">
-  <div class="app-html">
+  <section class="hero has-text-centered">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-12">
+          <div
+            class="container content has-text-weight-bold header-text is-family-secondary is-size-6-mobile is-size-4">
 
-    <div class="hero-before"></div>
-    <section class="hero has-text-centered">
-      <div class="hero-body">
-        <div class="columns">
-          <div class="column is-12">
-            <div
-              class="container content has-text-weight-bold header-text is-family-secondary is-size-6-mobile is-size-4">
+            <!-- <h1 class="title">${conf_name}</h1> -->
 
-              <!-- <h1 class="title">${conf_name}</h1> -->
-
-              <div class="is-capitalized">XIII ВСЕРОССИЙСКОЕ ПЕТРОГРАФИЧЕСКОЕ СОВЕЩАНИЕ</div>
-              <div class="">(с участием зарубежных ученых)</div>
-              <div class="is-size-3 is-size-4-mobile is-capitalized">«ПЕТРОЛОГИЯ И ГЕОДИНАМИКА ГЕОЛОГИЧЕСКИХ ПРОЦЕССОВ»
-              </div>
+            <div class="is-capitalized">XIII ВСЕРОССИЙСКОЕ ПЕТРОГРАФИЧЕСКОЕ СОВЕЩАНИЕ</div>
+            <div class="">(с участием зарубежных ученых)</div>
+            <div class="is-size-3 is-size-4-mobile is-capitalized">«ПЕТРОЛОГИЯ И ГЕОДИНАМИКА ГЕОЛОГИЧЕСКИХ ПРОЦЕССОВ»
+            </div>
 
 
-              <div class="">Иркутск</div>
-              <div class="">07-13 сентября 2020</div>
-              <div></div>
-              <!-- <h3 class="subtitle">
+            <div class="">Иркутск</div>
+            <div class="">07-13 сентября 2020</div>
+            <div></div>
+            <!-- <h3 class="subtitle">
 
             г. Иркутск, 07-13 сентября 2020 г.
             ${conf_place}
           </h3> -->
-            </div>
           </div>
         </div>
-
-
       </div>
-    </section>
 
 
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-3">
-            <aside class="is-medium menu">
+    </div>
+  </section>
 
-              <ul class="menu-list">
-                ${menu_items}
-                <!-- <li><a href="#">Организаторы</a></li>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <aside class="is-medium menu">
+
+            <ul class="menu-list">
+              ${menu_items}
+              <!-- <li><a href="#">Организаторы</a></li>
             <li><a href="#">Информационное сообщение</a></li>
             <li><a href="#">Место проведения</a></li>
             <li><a href="#">Важные даты</a></li>
@@ -129,50 +125,49 @@
             <li><a href="#">Научные направления</a></li>
             <li><a href="#">Приглашение</a></li>
             <li><a href="#">Регистрация/Вход</a></li> -->
-              </ul>
+            </ul>
 
-            </aside>
-          </div>
-          <div class="column is-9">
-            <div class="content is-medium" id="js-content">
-              <!-- <h3 class="title is-3">Заголовок</h3> -->
-              ${content}
+          </aside>
+        </div>
+        <div class="column is-9">
+          <div class="content is-medium" id="js-content">
+            <!-- <h3 class="title is-3">Заголовок</h3> -->
+            ${content}
 
-              <div id="map"></div>
-            </div>
+            <div id="map"></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
-    <footer class="footer has-background-dark">
-      <div class="columns is-mobile is-centered">
-        <div class="field is-grouped is-grouped-multiline">
-          <div class="control">
-            <div class="tags has-addons"><a class="tag is-link" href="http//igc.irk.ru">IGC</a>
-              <span class="tag is-info">Иркутск</span>
-            </div>
+  <footer class="footer has-background-dark">
+    <div class="columns is-mobile is-centered">
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags has-addons"><a class="tag is-link" href="http//igc.irk.ru">IGC</a>
+            <span class="tag is-info">Иркутск</span>
           </div>
         </div>
       </div>
-      <div class="columns is-mobile is-centered love-science-robots is-8">
-        <div class="field is-grouped is-grouped-multiline">
-          <div class="control">
-            <div class="tags has-addons">
-              <span class="tag has-addons is-dark"><i class="fas fa-mountain"></i></span>
-              <span class="tag has-addons is-dark"><i class="fas fa-university"></i></span>
-              <span class="tag has-addons is-dark"><i class="fas fa-microscope"></i></span>
+    </div>
+    <div class="columns is-mobile is-centered love-science-robots is-8">
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag has-addons is-dark"><i class="fas fa-mountain"></i></span>
+            <span class="tag has-addons is-dark"><i class="fas fa-university"></i></span>
+            <span class="tag has-addons is-dark"><i class="fas fa-microscope"></i></span>
 
-            </div>
           </div>
         </div>
       </div>
+    </div>
 
-    </footer>
-  </div>
-</div>
+  </footer>
+
 
 </body>
 
