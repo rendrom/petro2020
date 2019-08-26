@@ -141,4 +141,4 @@ function createRotateAnimation(map) {
 if (window.location.pathname.indexOf('/place') !== -1) {
   onDomLoaded(_createMap);
 }
-onDomLoaded(_createMap);
+// onDomLoaded(_createMap);
