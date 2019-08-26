@@ -91,7 +91,7 @@ function _initMap(onMapCreate) {
       'source': 'highlighted-buildings',
       'filter': ['==', 'extrude', 'true'],
       'type': 'fill-extrusion',
-      'minzoom': 15,
+      // 'minzoom': 15,
       'paint': {
         'fill-extrusion-color': 'red',
 
@@ -99,8 +99,8 @@ function _initMap(onMapCreate) {
         // buildings as the user zooms in
         'fill-extrusion-height': [
           "interpolate", ["linear"], ["zoom"],
-          15, 0,
-          15.05, ["get", "height"]
+          1, 1,
+          15.05, ["get", "height"],
         ],
         'fill-extrusion-base': [
           "interpolate", ["linear"], ["zoom"],

@@ -64,6 +64,10 @@ li {
   background-color: white;
 }
 
+/* .content.is-medium {
+  font-size: 18px!important;
+} */
+
 #page-settings {
   position: absolute;
   right: 0;
