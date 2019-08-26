@@ -31,6 +31,7 @@ onDomLoaded(function () {
   updateMenuItems();
   updateAside();
   i18n();
+  updateDomElements();
 
   MOBILE_MENU = document.getElementById('js-mobile-menu');
 
@@ -178,9 +179,6 @@ function addBurgerListener() {
   })
 }
 
-// HELPERS
-
-
 function addNavbarFixedTop() {
   document.body.className = document.body.className + ' has-navbar-fixed-top';
 }
@@ -233,4 +231,31 @@ function _createNavItem(link) {
     navItem.className += ' is-active';
   }
   return navItem
+}
+
+function updateDomElements() {
+  elemsAddClassName(document.getElementsByTagName('h2'), 'title is-3');
+  forEach(document.getElementsByTagName('input'), function (elem) {
+    if (elem.type === 'submit') {
+      addClass(elem, 'button');
+    } else if (['text', 'password', 'email', 'tel'].indexOf(elem.type) !== -1) {
+      addClass(elem, 'input');
+    }
+  });
+}
+
+function addClass(e, addClass) {
+  e.className = e.className ? ' ' + addClass : addClass;
+}
+
+function elemsAddClassName(elems, addClassName) {
+  forEach(elems, function (e) {
+    addClass(e, addClassName);
+  });
+}
+
+function forEach(elems, fun) {
+  for (var fry = 0; fry < elems.length; fry++) {
+    fun(elems[fry]);
+  }
 }
