@@ -2,7 +2,6 @@ body, html {
   background: #f2f2f2;
 }
 
-
 pre, .message {
   max-width: 960px;
 }
@@ -12,7 +11,7 @@ li {
 }
 
 .logo2020 {
-  color:  #524ad0;
+  color: #524ad0;
 }
 
 .hero.is-primary {
@@ -90,11 +89,15 @@ li {
   height: 600px;
 }
 
-.navbar-brand > .navbar-brand {
+.navbar-brand>.navbar-brand {
   cursor: pointer;
 }
 
 .info-panel {
   max-height: 560px;
   overflow: scroll;
+}
+
+#loginWindow_content {
+  height: inherit!important;
 }

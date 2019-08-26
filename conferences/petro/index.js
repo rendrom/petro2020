@@ -65,6 +65,7 @@ var _createMap = function () {
     for (var fry = 0; fry < logos.length; fry++) {
       var logo = logos[fry];
       var img = new Image();
+      img.crossOrigin = 'Anonymous';
       img.src = url + logo + '.png';
       img.onload = onImageLoad(logo);
 
@@ -140,4 +141,4 @@ function createRotateAnimation(map) {
 if (window.location.pathname.indexOf('/place') !== -1) {
   onDomLoaded(_createMap);
 }
-// onDomLoaded(_createMap);
+onDomLoaded(_createMap);
