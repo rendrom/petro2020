@@ -16,8 +16,8 @@ export function createMap(options) {
 }
 
 function _initMap() {
-  mapboxgl.accessToken = 'pk.eyJ1IjoicmVuZHJvbSIsImEiOiJjano5cTQ5ZHUwMWIzM29tbW44eHRiZnZ0In0.ySxxfs_Fi6Ny85rarvwuNA';
-  var map = new mapboxgl.Map({
+  window.mapboxgl.accessToken = 'pk.eyJ1IjoicmVuZHJvbSIsImEiOiJjano5cTQ5ZHUwMWIzM29tbW44eHRiZnZ0In0.ySxxfs_Fi6Ny85rarvwuNA';
+  var map = new window.mapboxgl.Map({
     style: 'mapbox://styles/mapbox/light-v10',
     center: [104.269397, 52.243519],
     zoom: 15.5,
