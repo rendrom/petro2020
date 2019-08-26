@@ -59,8 +59,8 @@ var _createMap = function () {
 
     var logos = ['logo_igc', 'logo_crust'];
     var loaded = 0;
-    var url = 'http://127.0.0.1:5500/conferences/petro/data/';
-    // var url = 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/';
+    // var url = 'http://127.0.0.1:5500/conferences/petro/data/';
+    var url = 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/';
 
     for (var fry = 0; fry < logos.length; fry++) {
       var logo = logos[fry];
