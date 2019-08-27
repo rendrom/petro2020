@@ -1,4 +1,4 @@
-import { simpleParallax } from '../assets/simpleparallax';
+import { simpleParallax } from './simpleparallax';
 
 
 export function createParallax(options) {
