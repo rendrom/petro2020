@@ -5,6 +5,7 @@ import '../../src/script';
 import { onDomLoaded } from '../../src/utils';
 import { createPetroMap} from './createPetroMap';
 import { createPetroCalendar } from './createPetroCalendar';
+import { createParallax } from '../../src/parallax';
 
 
 onDomLoaded(function () {
@@ -15,11 +16,10 @@ onDomLoaded(function () {
   img.src = url;
   // Once image is loaded replace the src of the HTML element
   img.onload = function () {
-    // var background = "linear-gradient(to top right, #524ad0 10%, #D099FA), url('" + url + "')";
-    var background = "url('" + url + "') ";
+    var background = "url('" + url + "')";
     hero.style.backgroundImage = background;
   };
-
+  createParallax();
 });
 
 
