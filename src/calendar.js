@@ -30,17 +30,18 @@ function _init(options, onCreate) {
 
   options.mouseOnDay = options.mouseOnDay || function (e) {
     if (e.events.length > 0) {
-      var content = '';
+      var html = '';
 
-      for (var i in e.events) {
-        content += '<div class="event-tooltip-content">'
-          + '<div class="event-name" style="color:' + e.events[i].color + '">' + e.events[i].name + '</div>'
+      for (var fry = 0; fry < e.events.length; fry++) {
+        var event = e.events[fry];
+        html += '<div class="event-tooltip-content">'
+          + '<div class="event-name" style="color:' + event.color + '">' + event.name + '</div>'
           + '</div>';
       }
       var tooltip = window.tippy(e.element);
       if (tooltip) {
         tooltip.set({
-          content: content,
+          content: html,
           arrow: true,
           followCursor: true,
           theme: 'light',
