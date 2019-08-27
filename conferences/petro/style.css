@@ -15,7 +15,7 @@
   background-image: url('https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/header-low.jpg');
   background-attachment: fixed;
   background-position: center center;
-  background-position-y: -50px;
+  background-position-y: -50px!important;
   background-size: cover;
 }
 
