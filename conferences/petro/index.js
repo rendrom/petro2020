@@ -11,7 +11,7 @@ import { createParallax } from '../../src/parallax';
 onDomLoaded(function () {
   // var url = 'http://127.0.0.1:5500/conferences/petro/data/header.jpg';
   var url = 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/header.jpg'
-  var hero = document.getElementsByClassName('hero')[0];
+  var hero = document.getElementsByClassName('main-hero')[0];
   var img = new Image();
   img.src = url;
   // Once image is loaded replace the src of the HTML element
