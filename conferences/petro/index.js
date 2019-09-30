@@ -24,10 +24,15 @@ onDomLoaded(function () {
 });
 
 
-var tileMapContainer = document.getElementById('tile-map');
-if (tileMapContainer) {
-  onDomLoaded(createTileMap);
-}
+
+
+onDomLoaded(function () {
+  var tileMapContainer = document.getElementById('tile-map');
+  if (tileMapContainer) {
+    createTileMap();
+  }
+});
+
 if (window.location.pathname.indexOf('/place') !== -1) {
   onDomLoaded(createPetroMap);
 }
