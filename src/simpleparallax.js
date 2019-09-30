@@ -10,7 +10,7 @@ export function simpleParallax(elem, modifier) {
     var bound = paraId.getBoundingClientRect();
     var x = bound.top / modifier;
     var y = Math.round(x * 100) / 100;
-    paraId.style.backgroundPosition = 'center -' + (20 + y) + 'px';
+    paraId.style.backgroundPosition = 'center -' + (10 + y) + 'px';
   }
   sp();
   window.addEventListener('scroll', function () { sp(); });

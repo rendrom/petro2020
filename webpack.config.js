@@ -51,7 +51,7 @@ module.exports = (env, argv) => {
 
     entry: {
       petro2020: './conferences/petro/index.js',
-      ultramafite2019: './conferences/ultramafite/index.js'
+      // ultramafite2019: './conferences/ultramafite/index.js'
     },
 
     output: {

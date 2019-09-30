@@ -5,7 +5,7 @@ import '../../src/script';
 import { onDomLoaded } from '../../src/utils';
 import { createPetroMap} from './createPetroMap';
 import { createPetroCalendar } from './createPetroCalendar';
-import { createParallax } from '../../src/parallax';
+// import { createParallax } from '../../src/parallax';
 
 
 onDomLoaded(function () {
@@ -19,7 +19,7 @@ onDomLoaded(function () {
     var background = "url('" + url + "')";
     hero.style.backgroundImage = background;
   };
-  createParallax();
+  // createParallax();
 });
 
 

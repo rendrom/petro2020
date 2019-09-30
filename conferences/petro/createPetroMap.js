@@ -2,7 +2,8 @@ import { createMap } from '../../src/ngwMap';
 
 var baseUrl = 'http://geonote.nextgis.com';
 export function createPetroMap () {
-
+  var mapContainer = document.getElementById('map');
+  mapContainer.className = (mapContainer.className ? mapContainer.className + ' ' : '') + 'active';
   createMap({
     geojson: 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/petro/data/place.geojson',
 
