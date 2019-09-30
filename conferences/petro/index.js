@@ -34,7 +34,7 @@ if (window.location.pathname.indexOf('/place') !== -1) {
 if (window.location.pathname.indexOf('/imp_dates') !== -1) {
   onDomLoaded(createPetroCalendar);
 }
-onDomLoaded(createTileMap);
+// onDomLoaded(createTileMap);
 // onDomLoaded(createPetroMap);
 // onDomLoaded(createPetroCalendar);
 
