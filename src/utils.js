@@ -1,6 +1,6 @@
 export var onDomLoaded;
 if (window.Tapestry) {
-  onDomLoaded = Tapestry.onDOMLoaded;
+  onDomLoaded = window.Tapestry.onDOMLoaded;
 } else {
   onDomLoaded = function (fun) {
     document.addEventListener('DOMContentLoaded', fun);

@@ -3,7 +3,8 @@ import './style.css';
 import './config';
 import '../../src/script';
 import { onDomLoaded } from '../../src/utils';
-import { createPetroMap} from './createPetroMap';
+import { createPetroMap } from './createPetroMap';
+import { createTileMap } from './createTileMap';
 import { createPetroCalendar } from './createPetroCalendar';
 // import { createParallax } from '../../src/parallax';
 
@@ -23,13 +24,17 @@ onDomLoaded(function () {
 });
 
 
-
+var tileMapContainer = document.getElementById('tile-map');
+if (tileMapContainer) {
+  onDomLoaded(createTileMap);
+}
 if (window.location.pathname.indexOf('/place') !== -1) {
   onDomLoaded(createPetroMap);
 }
 if (window.location.pathname.indexOf('/imp_dates') !== -1) {
   onDomLoaded(createPetroCalendar);
 }
+onDomLoaded(createTileMap);
 // onDomLoaded(createPetroMap);
 // onDomLoaded(createPetroCalendar);
 
