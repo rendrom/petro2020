@@ -27,6 +27,13 @@ export function createPetroCalendar() {
     {
       id: 3,
       name: '2-й Циркуляр (программа)',
+      startDate: new Date(2020, 1, 17),
+      endDate: new Date(2020, 1, 17),
+      color: 'red'
+    },
+    {
+      id: 3,
+      name: '3-й Циркуляр (программа)',
       startDate: new Date(2020, 6, 20),
       endDate: new Date(2020, 6, 20),
       color: 'red'

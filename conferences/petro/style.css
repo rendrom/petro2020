@@ -68,11 +68,11 @@
   text-align: center;
 }
 
-/* .tile.notification {
+.tile.notification {
   display: flex;
   justify-content: center;
   flex-direction: column;
-} */
+}
 
 .is-shady {
   animation: flyintoright .4s backwards;
