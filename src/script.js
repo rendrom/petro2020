@@ -125,7 +125,7 @@ function updateNavMenu() {
 }
 
 function updateAside() {
-  var menuItemsLinks = document.getElementsByClassName("menu-list")[0];
+  // var menuItemsLinks = document.getElementsByClassName("menu-list")[0];
   // if (window.innerWidth < MOBILE_SIZE) {
   //   menuItemsLinks.style.display = 'none';
   // } else {
