@@ -126,18 +126,18 @@ function updateNavMenu() {
 
 function updateAside() {
   var menuItemsLinks = document.getElementsByClassName("menu-list")[0];
-  if (window.innerWidth < MOBILE_SIZE) {
-    menuItemsLinks.style.display = 'none';
-  } else {
-    menuItemsLinks.style.display = 'block';
-  }
-  for (var fry = 0; fry < MENU_ITEMS.length; fry++) {
-    var menu = MENU_ITEMS[fry];
-    menu.className = menu.className.replace(' tags', '');
-    if (window.innerWidth < MOBILE_SIZE) {
-      menu.className = menu.className + ' tags';
-    }
-  }
+  // if (window.innerWidth < MOBILE_SIZE) {
+  //   menuItemsLinks.style.display = 'none';
+  // } else {
+  //   menuItemsLinks.style.display = 'block';
+  // }
+  // for (var fry = 0; fry < MENU_ITEMS.length; fry++) {
+  //   var menu = MENU_ITEMS[fry];
+  //   menu.className = menu.className.replace(' tags', '');
+  //   if (window.innerWidth < MOBILE_SIZE) {
+  //     menu.className = menu.className + ' tags';
+  //   }
+  // }
 }
 
 function updateMobileMenu() {
