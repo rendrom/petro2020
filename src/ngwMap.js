@@ -11,7 +11,7 @@ export function createMap(options, onMapCreate) {
   loadJs('https://unpkg.com/@nextgis/ngw-mapbox');
 
   var intervalId = setInterval(function () {
-    if (window.NgwMap) {
+    if (window.NgwMapbox) {
       _initMap(onMapCreate);
       clearInterval(intervalId);
     }
@@ -32,12 +32,10 @@ function _initMap(onMapCreate) {
   for (var o in ngwMapOptions) {
     opt[o] = ngwMapOptions[o];
   }
-  var ngwMap = new window.NgwMap(opt);
+  var ngwMap = new window.NgwMapbox(opt);
 
-  var map = ngwMap.mapAdapter.map;
-  // The 'building' layer in the mapbox-streets vector source contains building-height
-  // data from OpenStreetMap.
-  map.on('load', function () {
+  ngwMap.onLoad().then(function () {
+    var map = ngwMap.mapAdapter.map;
     if (onMapCreate) {
       onMapCreate(map, ngwMap);
     }

@@ -3,6 +3,7 @@
  * @link https://github.com/rendrom/petro2020
  */
 import { loadCss, onDomLoaded, addMeta } from './utils';
+import I18N from './i18n.json';
 
 // LOAD 3rd PARTY LIBRARIES
 
@@ -17,7 +18,7 @@ addMeta('viewport', 'width=device-width, initial-scale=1');
 // MAIN
 var LANGUAGE = 'ru';
 var MENU_ITEMS;
-var MOBILE_SIZE = 768;
+// var MOBILE_SIZE = 768;
 var MOBILE_MENU;
 var ACTIVE_LINK;
 var CONF_URL = window.CONF_URL;
@@ -193,14 +194,7 @@ function detectLanguage() {
 function i18n() {
   detectLanguage();
 
-  var messages = {
-    en: {
-      'language-switcher': 'РУ'
-    },
-    ru: {
-      'language-switcher': 'EN'
-    }
-  }
+  var messages = I18N;
 
   var toTranslateElements = document.getElementsByClassName('i18n');
   var locale = messages[LANGUAGE];
