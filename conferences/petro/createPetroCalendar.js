@@ -80,7 +80,7 @@ export function createPetroCalendar() {
   createCalendar({
     dataSource: dataSource,
     minDate: new Date(),
-    maxDate: new Date(2020, 8, 13),
+    maxDate: new Date(2020, 8, 14),
     style: 'border'
   });
 }
