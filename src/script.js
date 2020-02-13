@@ -2,7 +2,7 @@
  * @author e-mail:rendrom@gmail.com
  * @link https://github.com/rendrom/petro2020
  */
-import { loadCss, onDomLoaded, addMeta } from './utils';
+import { loadCss, onDomLoaded, addMeta, LANGUAGE, detectLanguage } from './utils';
 import I18N from './i18n.json';
 
 // LOAD 3rd PARTY LIBRARIES
@@ -16,7 +16,6 @@ loadCss('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 addMeta('viewport', 'width=device-width, initial-scale=1');
 
 // MAIN
-var LANGUAGE = 'ru';
 var MENU_ITEMS;
 // var MOBILE_SIZE = 768;
 var MOBILE_MENU;
@@ -182,13 +181,6 @@ function addBurgerListener() {
 
 function addNavbarFixedTop() {
   document.body.className = document.body.className + ' has-navbar-fixed-top';
-}
-
-function detectLanguage() {
-  var switcherLink = document.getElementById('js-language-switcher');
-  if (switcherLink) {
-    LANGUAGE = switcherLink.href.indexOf(':ru') !== -1 ? 'en' : 'ru';
-  }
 }
 
 function i18n() {

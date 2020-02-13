@@ -1,4 +1,5 @@
-import { loadJs, loadCss } from './utils';
+import { loadJs, loadCss, detectLanguage } from './utils';
+
 import './calendar.css';
 
 export function createCalendar(options, onCreate) {
@@ -26,7 +27,7 @@ export function createCalendar(options, onCreate) {
 function _init(options, onCreate) {
   var elem = document.getElementById('extra');
   options = options || {};
-  options.language = 'ru';
+  options.language = detectLanguage();
 
   options.mouseOnDay = options.mouseOnDay || function (e) {
     if (e.events.length > 0) {

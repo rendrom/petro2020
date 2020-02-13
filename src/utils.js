@@ -1,10 +1,21 @@
 export var onDomLoaded;
+export var LANGUAGE = 'ru';
+
+
 if (window.Tapestry) {
   onDomLoaded = window.Tapestry.onDOMLoaded;
 } else {
   onDomLoaded = function (fun) {
     document.addEventListener('DOMContentLoaded', fun);
   }
+}
+
+export function detectLanguage() {
+  var switcherLink = document.getElementById('js-language-switcher');
+  if (switcherLink) {
+    LANGUAGE = switcherLink.href.indexOf(':ru') !== -1 ? 'en' : 'ru';
+  }
+  return LANGUAGE;
 }
 
 export function loadCss(href) {
