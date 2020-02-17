@@ -87,10 +87,12 @@ export function createPetroCalendar() {
       endDate: new Date(2020, 8, 14),
       color: '#00d1b2'
     }
-  ]
+  ];
+  var now = new Date();
+  var minDate = now.setDate(now.getDate() - 1);
   createCalendar({
     dataSource: dataSource,
-    minDate: new Date(),
+    minDate: minDate,
     maxDate: new Date(2020, 8, 14),
     style: 'border'
   });
