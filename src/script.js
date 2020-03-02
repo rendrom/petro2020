@@ -63,7 +63,7 @@ function updateMenuItems() {
   MENU_ITEMS = menuItemsLinks.getElementsByTagName('a');
   for (var fry = 0; fry < MENU_ITEMS.length; fry++) {
     var link = MENU_ITEMS[fry];
-    if (link.href.indexOf(window.location.pathname) !== -1) {
+    if (link.href.indexOf === window.location.pathname) {
       link.className += ' has-text-primary';
       ACTIVE_LINK = link;
       break;
