@@ -61,9 +61,9 @@ function addNavBrandClickEvent() {
 function updateMenuItems() {
   var menuItemsLinks = document.getElementsByClassName("menu-list")[0];
   MENU_ITEMS = menuItemsLinks.getElementsByTagName('a');
-  for (var fry = 0; fry < MENU_ITEMS.length; fry++) {
+  for (var fry = MENU_ITEMS.length; fry--;) {
     var link = MENU_ITEMS[fry];
-    if (link.href.indexOf === window.location.pathname) {
+    if (link.href.indexOf(window.location.pathname) !== -1) {
       link.className += ' has-text-primary';
       ACTIVE_LINK = link;
       break;
