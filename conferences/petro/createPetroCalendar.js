@@ -32,21 +32,21 @@ export function createPetroCalendar() {
       id: 1,
       name: msg.registration,
       startDate: new Date(),
-      endDate: new Date(2020, 2, 12),
+      endDate: new Date(2021, 2, 12),
       color: 'yellow'
     },
     {
       id: 2,
       name: msg.abstracts,
       startDate: new Date(),
-      endDate: new Date(2020, 6, 30),
+      endDate: new Date(2021, 6, 30),
       color: 'lightgreen'
     },
     {
       id: 6,
       name: msg.excursions_registration,
       startDate: new Date(),
-      endDate: new Date(2020, 6, 30),
+      endDate: new Date(2021, 6, 30),
       color: '#00d1b2'
     },
     // {
@@ -59,29 +59,29 @@ export function createPetroCalendar() {
     {
       id: 3,
       name: msg.circular2,
-      startDate: new Date(2020, 5, 5),
-      endDate: new Date(2020, 5, 5),
+      startDate: new Date(2021, 5, 5),
+      endDate: new Date(2021, 5, 5),
       color: 'red'
     },
     {
       id: 3,
       name: msg.circular3,
-      startDate: new Date(2020, 5, 21),
-      endDate: new Date(2020, 5, 21),
+      startDate: new Date(2021, 5, 21),
+      endDate: new Date(2021, 5, 21),
       color: 'red'
     },
     {
       id: 4,
       name: msg.conference,
-      startDate: new Date(2020, 8, 6),
-      endDate: new Date(2020, 8, 12),
+      startDate: new Date(2021, 8, 6),
+      endDate: new Date(2021, 8, 12),
       color: '#524ad0'
     },
     {
       id: 5,
       name: msg.excursions,
-      startDate: new Date(2020, 8, 10),
-      endDate: new Date(2020, 8, 12),
+      startDate: new Date(2021, 8, 10),
+      endDate: new Date(2021, 8, 12),
       color: '#00d1b2'
     }
   ];
@@ -89,7 +89,7 @@ export function createPetroCalendar() {
   createCalendar({
     dataSource: dataSource,
     minDate: new Date(new Date().setDate(new Date().getDate() - 1)),
-    maxDate: new Date(2020, 8, 14),
+    maxDate: new Date(2021, 8, 14),
     style: 'border'
   });
 }
