@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 var PACKAGE = require('./package.json');
 var banner = PACKAGE.name + ' - ' + PACKAGE.version + ' | ' +
   new Date().toUTCString() + ' | ' + PACKAGE.author + ' | ' +
@@ -41,13 +42,13 @@ module.exports = (env, argv) => {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(argv.mode || 'development'),
     }),
-    new webpack.BannerPlugin(banner)
+    new webpack.BannerPlugin(banner),
   ];
 
   const config = {
     mode: argv.mode || 'development',
     // devtool: 'none',
-    devtool: isProd ? '#source-map' : 'eval-source-map',
+    devtool: isProd ? false : 'eval-source-map',
 
     entry: {
       petro2020: './conferences/petro/index.js',
@@ -58,7 +59,7 @@ module.exports = (env, argv) => {
       filename: '[name].js',
       publicPath: ASSET_PATH
     },
-
+    target: ['web', 'es5'],
     resolve: {
       extensions: ['.js'],
     },
@@ -66,6 +67,15 @@ module.exports = (env, argv) => {
       rules
     },
     plugins,
+    optimization: {
+      minimize: true,
+      minimizer: [
+        new TerserPlugin({
+          extractComments: false,
+        }),
+      ],
+    },
+
   };
   return config;
 };
