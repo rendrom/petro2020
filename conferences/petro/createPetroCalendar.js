@@ -32,7 +32,7 @@ export function createPetroCalendar() {
       id: 1,
       name: msg.registration,
       startDate: new Date(),
-      endDate: new Date(2021, 2, 12),
+      endDate: new Date(2021, 4, 30),
       color: 'yellow'
     },
     {
