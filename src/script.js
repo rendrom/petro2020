@@ -8,8 +8,8 @@ import I18N from './i18n.json';
 // LOAD 3rd PARTY LIBRARIES
 
 loadCss('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-loadCss('https://unpkg.com/bulma@0.7.5/css/bulma.min.css');
-loadCss('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+loadCss('https://unpkg.com/bulma@0.9.2/css/bulma.min.css');
+loadCss('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
 
 // UPDATE HEADER
 
