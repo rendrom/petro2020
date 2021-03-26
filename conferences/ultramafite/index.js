@@ -21,7 +21,7 @@ onDomLoaded(function () {
 
 var pointLayer = {
   // resourceId: 4248,
-  resourceId: 20,
+  resource: 20,
   id: 'points',
   selectable: true,
   paint: { color: '#524ad0', radius: 6, opacity: 0.6, stroke: true, strokeColor: 'white', strokeOpacity: 1 },

@@ -24,8 +24,6 @@ onDomLoaded(function () {
 });
 
 
-
-
 onDomLoaded(function () {
   var tileMapContainer = document.getElementById('tile-map');
   if (tileMapContainer) {

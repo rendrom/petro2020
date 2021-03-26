@@ -22,6 +22,6 @@ function _initMap() {
   }
 
   var ngwMap = new window.NgwMap(opt);
-  ngwMap.addNgwLayer({ resourceId: 347, fit: true})
+  ngwMap.addNgwLayer({ resource: 347, fit: true})
 
 }
