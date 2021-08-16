@@ -49,11 +49,11 @@
   color: #b9983f;
 }
 
-.org-links_container .divider {
+.org-links_container .org-divider {
   padding: 0 1rem;
 }
 
-.org-links_container .divider::before {
+.org-links_container .org-divider::before {
   content: '/'
 }
 
