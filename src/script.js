@@ -2,13 +2,14 @@
  * @author e-mail:rendrom@gmail.com
  * @link https://github.com/rendrom/petro2020
  */
-import { loadCss, onDomLoaded, addMeta, LANGUAGE, detectLanguage } from './utils';
+import { loadCss, onDomLoaded, addMeta, LANGUAGE, detectLanguage, loadJs } from './utils';
 import I18N from './i18n.json';
 
 // LOAD 3rd PARTY LIBRARIES
 
 loadCss('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 loadCss('https://unpkg.com/bulma@0.9.2/css/bulma.min.css');
+loadJs('https://www.jsdelivr.com/package/npm/@creativebulma/bulma-divider');
 loadCss('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
 
 // UPDATE HEADER
