@@ -31,6 +31,20 @@ onDomLoaded(function () {
   }
 });
 
+onDomLoaded(function () {
+  var collectivePhoto = document.getElementById('collective-photo');
+  if (collectivePhoto) {
+    var url = 'http://conf.ict.nsc.ru/files/conferences/petro2020/669776/_DSC5815_1_low.jpg';
+    var img = new Image();
+    img.src = url;
+    // Once image is loaded replace the src of the HTML element
+    img.onload = function () {
+      var background = "url('" + url + "')";
+      collectivePhoto.style.backgroundImage = background;
+    };
+  }
+});
+
 if (window.location.pathname.indexOf('/place') !== -1) {
   onDomLoaded(createPetroMap);
 }
