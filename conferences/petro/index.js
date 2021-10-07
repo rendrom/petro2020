@@ -39,8 +39,7 @@ onDomLoaded(function () {
     img.src = url;
     // Once image is loaded replace the src of the HTML element
     img.onload = function () {
-      var background = "url('" + url + "')";
-      collectivePhoto.style.backgroundImage = background;
+      collectivePhoto.parentNode.replaceChild(img, collectivePhoto);
     };
   }
 });
