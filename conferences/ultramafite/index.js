@@ -28,7 +28,7 @@ var pointLayer = {
   selectedPaint: { color: '#524ad0', radius: 8, opacity: 1, stroke: true, strokeColor: 'white', strokeOpacity: 1 }
 }
 
-var baseUrl = 'http://geonote.nextgis.com';
+var baseUrl = 'https://geonote.nextgis.com';
 var _createMap = function () {
   createMap({
     geojson: 'https://raw.githubusercontent.com/rendrom/petro2020/master/conferences/ultramafite/data/place.geojson',

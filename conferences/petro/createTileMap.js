@@ -12,7 +12,7 @@ export function createTileMap() {
 }
 function _initMap() {
   const opt = {
-    baseUrl: 'http://geonote.nextgis.com',
+    baseUrl: 'https://geonote.nextgis.com',
     center: [104.269397, 52.243519],
     zoom: 15.5,
     target: 'tile-map',
