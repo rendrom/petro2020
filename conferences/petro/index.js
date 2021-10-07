@@ -32,7 +32,7 @@ onDomLoaded(function () {
 });
 
 onDomLoaded(function () {
-  var collectivePhoto = document.getElementById('collective-photo');
+  var collectivePhoto = document.getElementsByClassName('collective-photo')[0];
   if (collectivePhoto) {
     var url = 'http://conf.ict.nsc.ru/files/conferences/petro2020/669776/_DSC5815_1_low.jpg';
     var img = new Image();
